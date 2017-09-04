@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bootstrap demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--bootstrap-->
+	<link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <h1> Instagram Clone</h1>
+    <h3>login</h3>
+    #login.html
+    <form method="post">
+        {% csrf_token %}
+
+        <div>
+            <label for="username">Username: </label>
+            <input id="username" type="text" name="username" value="">
+        </div>
+
+        <div>
+            <label for="password">Password: </label>
+            <input id="password" type="password" name="password" value="">
+        </div>
+
+        <input type="submit" value="Log In" class = "btn btn-success">
+    </form>
+</div>
+<!--javascript files-->
+<!--jquery libray-->
+<script src="{% static "js/jquery-3.2.1.js" %}">
+</script>
+<!--bootstrap js library-->
+<script src="{% static "js/bootstrap.js" %}">
+</script>
+</body>
+</html>

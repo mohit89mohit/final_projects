@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Signup Form</title>
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Bootstrap-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<style>
+	.city {
+    	float: left;
+    	margin: 5px;
+    	padding: 5px;
+    	max-width: 30px;
+    	height: 30px;
+    	border: 1px solid black;
+	}
+	</style>
+</head>
+<body>
+<div>
+		<h1>Swachh Bharat</h1>
+        <h2>Sign up</h2>
+		<form method="post">
+			{% csrf_token %}
+			<div class="city">
+				<label for="username">Username: </label>
+				<input id="username" type="text" name="username" value="{{ username }}">
+			</div>
+			<div class="city">
+				<label for="name">Name: </label>
+				<input id="name" type="text" name="name" value="{{ name }}">
+			</div>
+			<div class="city">
+				<label for="email">Email: </label>
+				<input id="email" type="text" name="email" value="{{ email }}">
+			</div>
+			<div class="city">
+				<label for="password">Password: </label>
+				<input id="password" type="password" name="password" value="{{ password }}">
+			</div>
+			<input type="submit" value="Sign Up">
+			<img src=" a.jpg ">
+			<h3>login</h3>
+		</form>
+	<aside>
+		<form method="get" action="/login/">
+			<div class="city">
+				<button type="submit">login</button>
+			</div>
+		</form>
+	</aside>
+</div>
+
+		<!--javascript files-->
+		<!--jquery library-->
+		<script src="js/jquery-3.2.1.js"><
+		<!--Bootstrap js Library-->
+		<script src="js/bootstrap.js"></script>
+</body>
+</html>
+

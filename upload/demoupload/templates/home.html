@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--bootstrap-->
+	<link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <form method="post">
+        {% csrf_token %}
+        <h1> Instagram Clone</h1>
+        <h3>login</h3>
+        <input type="submit" value="Log In">
+
+        <h3>Signup</h3>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+<!--javascript files-->
+<!--jquery libray-->
+<script src="{% static "js/jquery-3.2.1.js" %}">
+</script>
+<!--bootstrap js library-->
+<script src="{% static "js/bootstrap.js" %}">
+</script>
+</body>
+</html>
